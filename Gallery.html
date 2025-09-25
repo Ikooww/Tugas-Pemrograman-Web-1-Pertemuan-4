@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+<style>
+    *,
+    html {
+        margin: 0;
+        padding: 0;
+        }
+    body {
+        font-family: sans-serif;
+    }
+    ul {
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        float: left;
+        list-style-type: none;
+        padding: 10px;
+        margin: 10px;
+        font-size: 30px;
+    }
+    
+    li a {
+        color: blueviolet;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    li a:hover {
+        background-color: wheat;
+    }
+
+    .content-wrapper {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+        padding: 20px 0;
+    }
+    .gallery-item {
+        text-align: center;
+        color: blueviolet;
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        width: 400px;
+    }
+    .gallery-item img, .gallery-item video {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        border: 2px solid blueviolet;
+    }
+    .caption {
+        margin-top: 8px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body style="background-color: beige;" >
+    
+    <p id = "link Anchor"></p>
+
+    <div >
+        <h1 style="color: blueviolet; margin: 10px; padding: 10px;" >Pertemuan 4: Latihan menyisipkan video dan gambar</h1>
+        <hr size = 7 color = "blueviolet" width="100%">
+        
+        <div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li> 
+                    <a href="About.html">About</a>
+                </li>
+                <li>
+                    <a href="Gallery.html">Gallery</a>
+                </li>  
+            </ul>
+        </div>
+        
+        <hr size = 7 color = "blueviolet" width="100%">
+
+        <div class="content-wrapper">
+
+            <h3 style="color: blueviolet; margin: 20px 10px 10px 10px; font-size: 1.5em;">Video</h3>
+            <video width="400" height="240" controls>
+                <source src="video/WhatsApp Video 2025-09-24 at 16.57.49_c3220e84.mp4" type="video/mp4">
+                Browser Anda tidak mendukung tag video.
+            </video>
+
+            <!-- TEMPLATE GALERI MULAI DI SINI -->
+            <h3 style="color: blueviolet; margin: 20px 10px 10px 10px; font-size: 1.5em;">Gambar</h3>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/Belajar.jpg" alt="Placeholder Gambar 1">
+                    <p class="caption">Kegiatan Masa Perkulian </p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Bekerja.jpg" alt="Placeholder Gambar 2" style="height: 300px; width: 500px;">
+                    <p class="caption">Bekerja Daily Worker </p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Narik.jpg" alt="Placeholder Gambar 3" style="height: 300px; width: 500px;">
+                    <p class="caption">Narik Shopeefood</p>
+                </div>
+            </div>
+            <!-- AKHIR TEMPLATE GALERI -->
+        </div>
+
+        <ul style="background-color: blueviolet; height: 50px; margin-top: 20px;">
+         <h3 style="margin:0;">     
+               <a href="#link Anchor" style="text-decoration: none; color: white;">&copy; Click</a>
+         </h3>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
